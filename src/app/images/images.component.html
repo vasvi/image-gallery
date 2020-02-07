@@ -1,0 +1,7 @@
+<h1>Image gallery</h1>
+
+<div class="container">
+    <a *ngFor="let image of images" (click)='showImage(image)'>
+      <img src={{image}} height="100" width="100" />
+    </a>
+</div>

@@ -1,0 +1,15 @@
+a {
+    color: grey;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    padding-top: 20px;
+}

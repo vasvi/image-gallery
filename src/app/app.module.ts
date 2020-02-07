@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { ImagesComponent } from './images/images.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ImageDetailComponent,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ImageDetailComponent,
+    ImagesComponent
+  ]
 })
 export class AppModule { }
