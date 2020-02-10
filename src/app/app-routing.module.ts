@@ -8,12 +8,14 @@ import { ImagesComponent } from './images/images.component'
 const routes: Routes = [
   {
     path: 'detail',
-    component: ImageDetailComponent
+    component: ImageDetailComponent,
+    data: {animation: 'ImageDetail'}
   },
   {
     path: '',
     component: ImagesComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
+    data: {animation: 'ImagesPage'}
   }
 ];
 
